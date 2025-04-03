@@ -1,10 +1,8 @@
-export default function App() {
+import teachers from "./constants/teacher";
 
-    const teachers = [
-        'Madame BOURRELI', 'Madame EL ALLOUCHI', 'Madame FLAMANT', 'Monsieur LESAINT', 'Madame MARIEN', 'Madame OUAKED', 'Monsieur RAGEOT', 'Monsieur SALAMA'
-    ]
+export default function App() {
     return (
-        <div className=" bg-blue-500 flex w-full h-full justify-center">
+        <div className=" bg-blue-500 flex w-full h-full justify-center py-6">
             <div className="w-full h-full md:max-w-4xl  bg-white p-6 rounded-lg flex-col">
                 <h1 className="text-xl md:text-2xl font-bold uppercase">Dispositif Anti-Harcelement</h1>
                 

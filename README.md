@@ -1,46 +1,103 @@
-# Getting Started with Create React App
+# 📘 Anti-Bullying Reporting App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React TypeScript application to anonymously and safely report school bullying incidents.
 
-## Available Scripts
+> 🛠️ Built with **React**, **TypeScript**, and **Tailwind CSS**
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🎯 Purpose
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This application allows a student or witness to:
+- Alert a designated teacher
+- Accurately describe the incident
+- Stay anonymous if they wish
+- Attach any relevant evidence
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+## 📸 App Preview
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Screenshot teacher](./documentation/screen-1.png)
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Screenshot form](./documentation/screen-2.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🧩 File Structure
 
-### `npm run eject`
+```
+src/
+├── App.tsx               # Main component
+├── constants/
+│   └── teacher.ts        # List of designated teachers
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+---
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📄 Example content for `src/constants/teacher.ts`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```ts
+const teachers = [
+  "Ms. Dupont",
+  "Mr. Martin",
+  "Ms. Lefèvre",
+  "Mr. Bernard"
+]
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+export default teachers
+```
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🚀 Getting Started
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 1. Clone the project
+
+```bash
+git clone https://github.com/your-username/anti-bullying-app.git
+cd anti-bullying-app
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Start the development server
+
+```bash
+npm run dev
+```
+
+---
+
+## ✅ TODO
+
+- [ ] Connect to a secure backend
+- [ ] Actually send the form (via email or API)
+- [ ] Add a success confirmation step
+- [ ] Improve accessibility (a11y)
+
+---
+
+## 💡 Notes
+
+- The user can remain **completely anonymous**
+- The form is designed to be quick and easy to complete
+- No data is submitted without user confirmation
+
+---
+
+## 🛡️ Privacy & License
+
+This is a demo version — no personal data is collected or stored.
+
+---
+
+## 👩‍🏫 Contributors
+
+Made with ❤️ to raise awareness and protect students.
